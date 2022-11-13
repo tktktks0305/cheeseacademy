@@ -12,6 +12,7 @@ body {
     padding-right: 10px;
     font-size: 16px;
     color: #222222;
+    margin: 0 auto;
 }
     header {
         width: 1200px;
@@ -23,6 +24,9 @@ body {
         align-items: center;
         justify-content: space-between;
         /* 両端に配置 */
+        position: fixed;
+        top: 0;
+        z-index: 10000;
         }
         .header img {
             max-width: 300px;
@@ -52,10 +56,10 @@ body {
             }
 
         .mainvisual {
-            position: relative;    
+            position: relative;   
+            margin-top: 125px; 
         }
             .mainvisual img{
-            /* imgと書く */
                 width: 1190px;
                 height: auto;
             }
@@ -371,7 +375,6 @@ body {
             .details_5 {
                 margin-left: 37%;
             }
-            /* 画面サイズを変更したときに真ん中からずれる。 */
 
         #contact {
             margin-top: 60px;
@@ -436,6 +439,12 @@ body {
                 .box_email {
                     border-bottom: 1px solid #bfbfbf;
                 }
+                    #email {
+                        width: 40%;
+                    }
+                    #domain {
+                        width: 32%;
+                    }
                 .box_chance {
                     border-bottom: 1px solid #bfbfbf;
                 }
@@ -468,9 +477,7 @@ body {
                 background-color: #ffd61a;
                 transition: 0.3s;
                 }
-            /* displayを調整してもボタンの長さを短くできない。widthが効かない */
             .contact_send :hover {
-                text-decoration: none;
                 background-color: #ffa01a;
             }
             /* hoverが効かない */
